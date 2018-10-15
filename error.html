@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	<title>人脸识别资格认证</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+	<link rel="stylesheet" href="./css/ratchet.css">
+	<script type="./js/ratchet.js"></script>
+</head>
+<style type="text/css">
+	.bar{
+		background-color: #44cef8;
+	}
+	.span{
+		font-size: 16px;
+		color: red;
+		padding-left: 5px;
+	}
+	.btn{
+		margin-top: 20px;
+	}
+	.for{
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+</style>
+
+<body>
+	<header class="bar bar-nav">
+		<span class="icon icon-left-nav pull-left">
+		</span>
+		<h1 class="title">认证信息确认</h1>	
+	</header>
+	<br>
+	<div class="content">
+		<img src="./img/i1.jpg" class="head" width=100%; height=50%;>
+		<span class="span">后台系统没有查询到您的参保信息，请确认：<br>&nbsp&nbsp1、您的输入是否有误<br>&nbsp&nbsp2、您是否参保过<br>
+		&nbsp&nbsp3、如果以上信息没问题，请联系后台工作人员</span>
+		<form class="for" action="http://192.168.43.21:8080/a1.html">
+			<button class="btn btn-block" style="background: #44cef8;color: white;">返回</button>
+		</form>
+		<span class="span" style="text-align: center;display: block;margin-top:20px;">联系电话：0731-8989899</span>
+	</div>
+
+</body>
+</html>

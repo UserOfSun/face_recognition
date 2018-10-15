@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	<title>人脸识别资格认证</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+	<link rel="stylesheet" href="./css/ratchet.css">
+	<script type="./js/ratchet.js"></script>
+</head>
+<style type="text/css">
+	.bar{
+		background-color: #44cef8;
+	}
+	.for{
+		padding-top: 10px;
+		padding-left: 0px;
+		padding-right:0px;
+	}
+	.input-row label{
+		padding-left: 2px;
+	}
+	.head{
+		padding-top: 0px;
+	}
+	.span{
+	font-size: 13px;
+	color: red;
+	padding-left: 5px;
+	}
+</style>
+
+<body>
+	<header class="bar bar-nav">
+		<span class="icon icon-left-nav pull-left">
+		</span>
+		<h1 class="title">认证信息确认</h1>	
+	</header>
+	<br>
+	<div class="content">
+		<img src="./img/i1.jpg" class="head" width=100%; height=50%;>
+			<form class="for" action="http://192.168.43.21:8080/a.php" method="get">
+				<div class="input-row">
+				<label>社保编号：</label>
+				<input type="text" name="shebao"></input>
+			</div>
+			<div class="input-row">
+				<label>身份证号：</label>
+				<input type="text" name="id"></input>
+			</div>
+			<div class="for">
+				<button class="btn btn-block" style="background: #44cef8;color: white;">下一步</button>
+			</div>
+			</form>
+			<span class="span" style="margin-top: 30px;display: block;">温馨提示：<br>请输入您的社保号、或者身份证号码来先进行身份信息确定</span>
+	</div>
+
+</body>
+</html>
